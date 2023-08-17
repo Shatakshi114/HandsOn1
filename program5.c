@@ -19,7 +19,9 @@ int main(void)
         printf("fd3 = %d " , fd3 );
         printf("fd4 = %d " , fd4 );
         printf("fd5 = %d " , fd5 );
-	
+
+for(;;) ; 
+
 	}
 
 
