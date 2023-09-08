@@ -19,9 +19,13 @@ Date: 17th , Aug  2023
 
 int main() {
 	//take these inputs from command
+	
  int v =symlink("dest","destSL");
  if(v<0)
         {perror("failed");return 1;}
+
+ //perror-> gives a descriptive error
+ 
 
  int f = link("dest","destHL");
  if(f<0)
