@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : program7.c
+Author : Shatakshi Tiwari
+Description : Write a program to copy file1 into file2 ($cp file1 file2)
+Date: 23rd , Aug 2023
+============================================================================
+*/
+
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/types.h>
@@ -6,9 +15,9 @@
 
 int main(int argc , char  *argv[])
 {
-       if(argc !=3)
+       if(argc !=3) 
        {
-       printf("useful");
+       printf("incorrect no. of arguments\n");
        }
      return 0 ;
 
@@ -16,7 +25,7 @@ int main(int argc , char  *argv[])
        int fd_write =  open(argv[2] , O_WRONLY|O_CREAT);
        if(fd_read == -1 || fd_write ==-1 ) 
 {
-	       printf("use use ful ful ");
+	       printf("ERROR\n");
 }
 
 while(1)
@@ -34,7 +43,13 @@ int fd_write_close = close(fd_write);
 if(fd_read_close == -1 || fd_write_close == -1 )
 
 {
-	printf("total use ");
+	printf("ERROR\n");
 }
 return 0 ;
 }
+
+
+
+
+//// three arg are taken for ./a.ot and two files
+// open returns value of fd >> 0 for input , 1 for output , 2 for error 

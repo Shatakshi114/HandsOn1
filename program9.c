@@ -1,3 +1,23 @@
+/*
+============================================================================
+Name : program9.c
+Author : Shatakshi Tiwari
+Description : Write a program to print the following information about a given file.
+             a. inode
+             b. number of hard links
+             c. uid
+             d. gid
+             e. size
+             f. block size
+             g. number of blocks
+             h. time of last access
+             i. time of last modification
+             j. time of last change
+Date: 23rd , Aug 2023
+============================================================================
+*/
+
+
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>
@@ -30,3 +50,5 @@ printf("j. time of last change  : %s", ctime(&s.st_ctime));
 
 }
 
+
+//ctime:
