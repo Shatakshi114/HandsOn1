@@ -18,7 +18,7 @@ int main(void){
 
 
 printf("The priority of the current process is = %d\n" , getpriority(PRIO_PROCESS,getpid()));
-nice(-6);
+nice(5);
 printf("The modified priority (using nice ) is = %d\n" , getpriority(PRIO_PROCESS,getpid()));
 
 }
